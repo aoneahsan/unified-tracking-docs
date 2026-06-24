@@ -1,0 +1,14 @@
+/* TEAM */
+  Developer: Ahsan Mahmood
+  Site: https://aoneahsan.com
+  GitHub: https://github.com/aoneahsan
+  npm: https://www.npmjs.com/~aoneahsan
+  LinkedIn: https://linkedin.com/in/aoneahsan
+  Contact: aoneahsan [at] gmail.com
+
+/* SITE */
+  Project: unified-tracking documentation
+  Package: https://www.npmjs.com/package/unified-tracking
+  Built with: Docusaurus 3, React, TypeScript
+  Hosting: Firebase Hosting + GitHub Pages
+  Last updated: 2026-06-24

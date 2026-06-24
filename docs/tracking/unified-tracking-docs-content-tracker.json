@@ -1,0 +1,63 @@
+{
+  "$schema": "unified-tracking-docs-seo-content-tracker",
+  "description": "Per-page rich SEO content enrichment progress for the unified-tracking documentation site. Resumable across sessions. This is meta JSON, not Docusaurus content (the docs plugin ignores non-md files).",
+  "site": "unified-tracking-docs",
+  "siteUrl": "https://unified-tracking-docs.aoneahsan.com",
+  "createdAt": "2026-06-24",
+  "lastUpdated": "2026-06-24",
+  "totalPages": 18,
+  "enrichedPages": 18,
+  "remainingPages": 0,
+  "batchSize": 15,
+  "wordsPerPageTarget": "600-1100",
+  "expert": "Ahsan Mahmood",
+  "seoFloor": {
+    "robotsAiAllowlist": true,
+    "sitemap": true,
+    "llmsTxt": true,
+    "jsonLd": ["WebSite", "Organization", "SoftwareSourceCode", "SoftwareApplication"],
+    "perPageMetaAndOg": true,
+    "definitionFirstIntros": true,
+    "faqPage": true
+  },
+  "pages": [
+    { "id": "intro", "status": "enriched" },
+    { "id": "getting-started/installation", "status": "enriched" },
+    { "id": "getting-started/quick-start", "status": "enriched" },
+    { "id": "getting-started/configuration", "status": "enriched" },
+    { "id": "guides/react", "status": "enriched" },
+    { "id": "guides/capacitor", "status": "enriched" },
+    { "id": "guides/consent-and-privacy", "status": "enriched" },
+    { "id": "guides/custom-providers", "status": "enriched" },
+    { "id": "reference/api/core-methods", "status": "enriched" },
+    { "id": "reference/api/configuration", "status": "enriched" },
+    { "id": "reference/api/types", "status": "enriched" },
+    { "id": "reference/api/react-hooks", "status": "enriched" },
+    { "id": "reference/providers/analytics", "status": "enriched" },
+    { "id": "reference/providers/error-tracking", "status": "enriched" },
+    { "id": "platforms/web", "status": "enriched" },
+    { "id": "platforms/native", "status": "enriched" },
+    { "id": "faq", "status": "enriched" },
+    { "id": "about-the-author", "status": "enriched" }
+  ],
+  "nextBatchSuggestion": {
+    "rationale": "Initial doc set (18 pages) is written and each page carries a definition-first intro, distinct title + meta description, and honest framing. Future long-tail batches: add per-provider how-to recipes (e.g. 'Send GA4 ecommerce events', 'Mask inputs in PostHog session replay'), framework integration guides (Next.js, Vite, Remix), and migration guides (from raw Segment/Sentry SDKs).",
+    "candidateTopics": [
+      "how-to/ga4-ecommerce-events",
+      "how-to/sentry-source-maps",
+      "how-to/posthog-session-replay-masking",
+      "integrations/nextjs",
+      "integrations/vite",
+      "migrate/from-raw-segment",
+      "migrate/from-raw-sentry"
+    ]
+  },
+  "workflow": {
+    "perBatch": [
+      "Pick the next topic cluster from nextBatchSuggestion.candidateTopics.",
+      "Write the page(s) with definition-first intro, distinct title + 140-160 char meta, 5-8 FAQ where relevant, honest limit-framing.",
+      "Wire into sidebars.ts. yarn build + yarn typecheck clean.",
+      "Update this tracker. ONE commit per batch."
+    ]
+  }
+}

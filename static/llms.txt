@@ -1,0 +1,44 @@
+# Unified Tracking — Documentation Index
+
+> `unified-tracking` is a unified analytics and error-tracking facade for React, web, and Capacitor apps. One TypeScript API (`track`, `identify`, `setUserProperties`, `logError`, `logRevenue`, `logScreenView`, `setConsent`, `reset`, `flush`) fans each call out to every provider you enable — 8 analytics providers (Google Analytics, Firebase, Amplitude, Mixpanel, Segment, PostHog, Heap, Matomo) and 8 error-tracking providers (Sentry, Crashlytics, DataDog RUM, Bugsnag, Rollbar, LogRocket, Raygun, AppCenter) — with a built-in consent gate and property minimization. MIT-licensed. Author: Ahsan Mahmood (https://aoneahsan.com). npm: https://www.npmjs.com/package/unified-tracking.
+
+## About
+
+The shipped (`3.3.0`) delivery path is the web/JS layer, which runs in browsers and inside the Capacitor WebView. Native iOS/Android SDK bridges exist on-branch but are not yet build-verified or published. The package has zero runtime dependencies; provider SDKs load only when you configure them. This `llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec.
+
+## Getting Started
+
+- [Introduction](https://unified-tracking-docs.aoneahsan.com/intro): what unified-tracking is, the facade model, and supported providers.
+- [Installation](https://unified-tracking-docs.aoneahsan.com/getting-started/installation): `yarn add unified-tracking`, peer dependencies, and subpath exports.
+- [Quick Start](https://unified-tracking-docs.aoneahsan.com/getting-started/quick-start): initialize and send your first event in a few minutes.
+- [Configuration](https://unified-tracking-docs.aoneahsan.com/getting-started/configuration): the full `UnifiedTrackingConfig` shape (analytics, errorTracking, settings).
+
+## Guides
+
+- [React integration](https://unified-tracking-docs.aoneahsan.com/guides/react): provider-free `useUnifiedTracking` and `useTrackEvent` hooks.
+- [Capacitor integration](https://unified-tracking-docs.aoneahsan.com/guides/capacitor): `registerCapacitorPlugin()` and the shared singleton.
+- [Consent and privacy](https://unified-tracking-docs.aoneahsan.com/guides/consent-and-privacy): the consent gate and `excludedProperties` minimization.
+- [Custom providers](https://unified-tracking-docs.aoneahsan.com/guides/custom-providers): extend `BaseAnalyticsProvider` / `BaseErrorTrackingProvider` and register with `@RegisterProvider`.
+
+## API Reference
+
+- [Core methods](https://unified-tracking-docs.aoneahsan.com/reference/api/core-methods): all 13 methods of `UnifiedTrackingPlugin`.
+- [Configuration types](https://unified-tracking-docs.aoneahsan.com/reference/api/configuration): `UnifiedTrackingConfig`, `GlobalSettings`, `BatchingSettings`, `PrivacySettings`.
+- [Data types](https://unified-tracking-docs.aoneahsan.com/reference/api/types): `ErrorContext`, `RevenueData`, `ConsentSettings`, `InitializeResult`, `ProviderStatus`, `TrackingEventPayload`.
+- [React hooks](https://unified-tracking-docs.aoneahsan.com/reference/api/react-hooks): `useUnifiedTracking`, `useTrackEvent`.
+
+## Providers
+
+- [Analytics providers](https://unified-tracking-docs.aoneahsan.com/reference/providers/analytics): config for Google, Firebase, Amplitude, Mixpanel, Segment, PostHog, Heap, Matomo.
+- [Error-tracking providers](https://unified-tracking-docs.aoneahsan.com/reference/providers/error-tracking): config for Sentry, Crashlytics, DataDog, Bugsnag, Rollbar, LogRocket, Raygun, AppCenter.
+
+## Platforms
+
+- [Web](https://unified-tracking-docs.aoneahsan.com/platforms/web): the shipped delivery layer.
+- [Native (iOS / Android)](https://unified-tracking-docs.aoneahsan.com/platforms/native): honest status of the native SDK bridges.
+
+## Reference
+
+- [FAQ](https://unified-tracking-docs.aoneahsan.com/faq): common questions about scope, providers, consent, and SSR.
+- [Changelog](https://unified-tracking-docs.aoneahsan.com/changelog): version history.
+- [About the author](https://unified-tracking-docs.aoneahsan.com/about-the-author): Ahsan Mahmood.

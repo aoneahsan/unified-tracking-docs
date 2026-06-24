@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Unified Tracking logo">
+  <title>Unified Tracking</title>
+  <desc>Three provider streams converging into one central hub node</desc>
+  <defs>
+    <linearGradient id="ut-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#ut-grad)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round">
+    <path d="M14 18 C 28 18, 26 32, 40 32" opacity="0.92"/>
+    <path d="M14 32 H 40" opacity="0.92"/>
+    <path d="M14 46 C 28 46, 26 32, 40 32" opacity="0.92"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="14" cy="18" r="3.4"/>
+    <circle cx="14" cy="32" r="3.4"/>
+    <circle cx="14" cy="46" r="3.4"/>
+  </g>
+  <circle cx="44" cy="32" r="7.5" fill="#ffffff"/>
+  <circle cx="44" cy="32" r="3.4" fill="url(#ut-grad)"/>
+</svg>
