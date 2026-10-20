@@ -19,7 +19,7 @@ const config: Config = {
     'One API for analytics + error tracking across 16 providers — React, web, and Capacitor.',
   favicon: 'img/favicon.svg',
 
-  // Production URL — served from Firebase Hosting + GitHub Pages.
+  // Production URL — served from GitHub Pages.
   url: SITE_URL,
   baseUrl: '/',
 
@@ -99,7 +99,7 @@ const config: Config = {
         },
         url: NPM_URL,
         sameAs: [NPM_URL, REPO_URL],
-        version: '3.3.0',
+        version: '3.3.2',
       }),
     },
     {
@@ -116,7 +116,7 @@ const config: Config = {
         author: { '@type': 'Person', name: 'Ahsan Mahmood', url: 'https://aoneahsan.com' },
         description:
           'Unified analytics and error-tracking plugin for React + Capacitor apps. One API, 16 providers, consent-aware. MIT-licensed.',
-        softwareVersion: '3.3.0',
+        softwareVersion: '3.3.2',
         license: 'https://opensource.org/licenses/MIT',
       }),
     },
@@ -166,7 +166,10 @@ const config: Config = {
             '**/_*/**',
             '**/*.test.{js,jsx,ts,tsx}',
             '**/__tests__/**',
+            'AGENTS.md',
+            'CLAUDE.md',
             'MANUAL-TASKS.md',
+            'tracking/**',
           ],
           routeBasePath: '/',
           editUrl: `${DOCS_REPO_URL}/edit/main/`,

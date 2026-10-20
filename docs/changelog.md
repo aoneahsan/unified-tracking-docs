@@ -9,9 +9,18 @@ sidebar_position: 98
 
 Version history for `unified-tracking`, latest first. This mirrors the package's `CHANGELOG.md`; the repository file is the source of truth for every entry.
 
-## Unreleased — native SDK bridges (on-branch, unverified)
+## 3.3.2 — 2026-07-25
 
-Native iOS/Android vendor-SDK bridges are written on a branch behind `registerCapacitorPlugin()` for Firebase, Sentry, Mixpanel, Amplitude, Segment, Bugsnag, and Rollbar. They are **not build-verified** and **not published** — `npm latest` stays on `3.3.0` (web layer). See [Platforms → Native](/platforms/native).
+- Corrected package and native version metadata after the `3.3.1` maintenance release.
+- Native source is included in the tarball but remains unverified and unsupported for native SDK delivery.
+
+## 3.3.1 — 2026-07-25
+
+- Fixed the package CLI, tarball changelog, formatting gate, provider side-effect metadata, and package metadata.
+
+## Native SDK bridges — included but unverified
+
+Native iOS/Android vendor-SDK sources are included behind `registerCapacitorPlugin()` for Firebase, Sentry, Mixpanel, Amplitude, Segment, Bugsnag, and Rollbar. They are **not build-verified or supported for native delivery**. See [Platforms → Native](/platforms/native).
 
 ## 3.3.0 — 2026-05-27
 

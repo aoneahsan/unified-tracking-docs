@@ -7,7 +7,7 @@ sidebar_position: 1
 
 # Web
 
-The web/JS layer is the shipped delivery path for `unified-tracking` (npm `3.3.0`). It runs in any browser and inside the Capacitor WebView, and it supports all 16 providers. Everything in the [Quick Start](/getting-started/quick-start) and [API reference](/reference/api/core-methods) targets this layer.
+The web/JS layer is the supported delivery path for `unified-tracking` (npm `3.3.2`). It runs in browsers and inside the Capacitor WebView, and it supports all 16 providers. Everything in the [Quick Start](/getting-started/quick-start) and [API reference](/reference/api/core-methods) targets this layer.
 
 ## How delivery works
 

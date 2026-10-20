@@ -1,7 +1,7 @@
 ---
 id: native
 title: Native (iOS / Android)
-description: Honest status of unified-tracking's native iOS and Android SDK bridges — written on-branch, not yet build-verified or published. WebView delivery is the supported path today.
+description: Status of unified-tracking's native iOS and Android SDK sources in 3.3.2. They are included but unverified; WebView delivery is supported.
 sidebar_position: 2
 ---
 
@@ -11,7 +11,7 @@ This page states the native status plainly so you can plan around it.
 
 ## What ships today
 
-Inside a Capacitor app, tracking runs through the **web/JS provider layer inside the WebView** — the same layer documented across this site. That is the shipped, supported path in npm `3.3.0`, and it covers all 16 providers. For most apps, WebView delivery is sufficient: events, identity, errors, revenue, and screen views all flow.
+Inside a Capacitor app, tracking runs through the **web/JS provider layer inside the WebView** — the same layer documented across this site. That is the supported path in npm `3.3.2`, and it covers all 16 providers. For most apps, WebView delivery is sufficient: events, identity, errors, revenue, and screen views all flow.
 
 ## What is on-branch but unverified
 
@@ -24,7 +24,7 @@ Both native plugin classes parse the same `UnifiedTrackingConfig` shape the JS c
 
 ## The honest caveat
 
-The native code is written but **not build-verified** in the maintainer's environment (no Xcode / Android Studio / CocoaPods / Gradle there), and it is **not published to npm**. Every touched native file carries a `// NOTE(unverified)` marker. Until a successful native build is confirmed on a real toolchain and device, do not rely on native-SDK delivery — and the npm `latest` tag stays on the web-layer `3.3.0`.
+The native source is included in the `3.3.2` package, but it is **not build-verified** for native SDK delivery. Every affected native file carries a `// NOTE(unverified)` marker. Until successful platform builds and device checks are recorded, do not rely on the native provider path.
 
 If you want to validate the native path yourself:
 
@@ -36,7 +36,7 @@ cd ios && pod install && xcodebuild -workspace Plugin.xcworkspace -scheme Plugin
 cd android && ./gradlew clean build test
 ```
 
-The full native contract lives in the package repo at `docs/features/polish-audit-release/round04-native-overview.md`.
+The maintained native status lives in the package repository at `docs/native-implementation.md`.
 
 ## Recommendation
 

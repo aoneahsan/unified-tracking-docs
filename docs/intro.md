@@ -40,7 +40,7 @@ Two controls run inside the engine before any provider sees data. `setConsent({ 
 
 ## Platform status (honest)
 
-The shipped npm release (`3.3.0`) delivers tracking through the **web/JS layer**, which runs both in browsers and inside the Capacitor WebView. Native iOS and Android SDK bridges have been written on a branch but are **not yet build-verified or published** — they need a native toolchain and device build to confirm. Until then, treat web/WebView delivery as the supported path. See [Platforms → Native](/platforms/native) for the full status.
+The shipped npm release (`3.3.2`) delivers tracking through the **web/JS layer**, which runs both in browsers and inside the Capacitor WebView. Native iOS and Android sources are included in the package but are **not build-verified or supported for native SDK delivery**. They need native toolchain and device checks. Until those gates pass, treat web/WebView delivery as the supported path. See [Platforms → Native](/platforms/native) for the full status.
 
 ## Where to go next
 

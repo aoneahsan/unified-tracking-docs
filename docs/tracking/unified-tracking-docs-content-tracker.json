@@ -4,7 +4,7 @@
   "site": "unified-tracking-docs",
   "siteUrl": "https://unified-tracking-docs.aoneahsan.com",
   "createdAt": "2026-06-24",
-  "lastUpdated": "2026-06-24",
+  "lastUpdated": "2026-10-20",
   "totalPages": 18,
   "enrichedPages": 18,
   "remainingPages": 0,
@@ -15,30 +15,89 @@
     "robotsAiAllowlist": true,
     "sitemap": true,
     "llmsTxt": true,
-    "jsonLd": ["WebSite", "Organization", "SoftwareSourceCode", "SoftwareApplication"],
+    "jsonLd": [
+      "WebSite",
+      "Organization",
+      "SoftwareSourceCode",
+      "SoftwareApplication"
+    ],
     "perPageMetaAndOg": true,
     "definitionFirstIntros": true,
     "faqPage": true
   },
   "pages": [
-    { "id": "intro", "status": "enriched" },
-    { "id": "getting-started/installation", "status": "enriched" },
-    { "id": "getting-started/quick-start", "status": "enriched" },
-    { "id": "getting-started/configuration", "status": "enriched" },
-    { "id": "guides/react", "status": "enriched" },
-    { "id": "guides/capacitor", "status": "enriched" },
-    { "id": "guides/consent-and-privacy", "status": "enriched" },
-    { "id": "guides/custom-providers", "status": "enriched" },
-    { "id": "reference/api/core-methods", "status": "enriched" },
-    { "id": "reference/api/configuration", "status": "enriched" },
-    { "id": "reference/api/types", "status": "enriched" },
-    { "id": "reference/api/react-hooks", "status": "enriched" },
-    { "id": "reference/providers/analytics", "status": "enriched" },
-    { "id": "reference/providers/error-tracking", "status": "enriched" },
-    { "id": "platforms/web", "status": "enriched" },
-    { "id": "platforms/native", "status": "enriched" },
-    { "id": "faq", "status": "enriched" },
-    { "id": "about-the-author", "status": "enriched" }
+    {
+      "id": "intro",
+      "status": "enriched"
+    },
+    {
+      "id": "getting-started/installation",
+      "status": "enriched"
+    },
+    {
+      "id": "getting-started/quick-start",
+      "status": "enriched"
+    },
+    {
+      "id": "getting-started/configuration",
+      "status": "enriched"
+    },
+    {
+      "id": "guides/react",
+      "status": "enriched"
+    },
+    {
+      "id": "guides/capacitor",
+      "status": "enriched"
+    },
+    {
+      "id": "guides/consent-and-privacy",
+      "status": "enriched"
+    },
+    {
+      "id": "guides/custom-providers",
+      "status": "enriched"
+    },
+    {
+      "id": "reference/api/core-methods",
+      "status": "enriched"
+    },
+    {
+      "id": "reference/api/configuration",
+      "status": "enriched"
+    },
+    {
+      "id": "reference/api/types",
+      "status": "enriched"
+    },
+    {
+      "id": "reference/api/react-hooks",
+      "status": "enriched"
+    },
+    {
+      "id": "reference/providers/analytics",
+      "status": "enriched"
+    },
+    {
+      "id": "reference/providers/error-tracking",
+      "status": "enriched"
+    },
+    {
+      "id": "platforms/web",
+      "status": "enriched"
+    },
+    {
+      "id": "platforms/native",
+      "status": "enriched"
+    },
+    {
+      "id": "faq",
+      "status": "enriched"
+    },
+    {
+      "id": "about-the-author",
+      "status": "enriched"
+    }
   ],
   "nextBatchSuggestion": {
     "rationale": "Initial doc set (18 pages) is written and each page carries a definition-first intro, distinct title + meta description, and honest framing. Future long-tail batches: add per-provider how-to recipes (e.g. 'Send GA4 ecommerce events', 'Mask inputs in PostHog session replay'), framework integration guides (Next.js, Vite, Remix), and migration guides (from raw Segment/Sentry SDKs).",
@@ -59,5 +118,14 @@
       "Wire into sidebars.ts. yarn build + yarn typecheck clean.",
       "Update this tracker. ONE commit per batch."
     ]
-  }
+  },
+  "packageVersion": "3.3.2",
+  "hosting": "GitHub Pages through .github/workflows/deploy-pages.yml and static/CNAME",
+  "verification": "2026-10-20: Yarn 4.17.1 install --immutable, typecheck, and Docusaurus build passed. Exact home and native-status pages rendered in controlled desktop and mobile Chrome.",
+  "maintenanceNotes": [
+    "GitHub Pages is the only recorded deployment authority.",
+    "Package and structured metadata now identify 3.3.2.",
+    "Native source is included in 3.3.2 but native SDK delivery remains unverified and unsupported.",
+    "Routine context review is next eligible on 2026-11-19."
+  ]
 }
